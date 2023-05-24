@@ -5,9 +5,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <ButtonWrapper>
     {options.map(option => (
       <FeedbackBtn
-        key={option.toLowerCase()}
+        key={option}
         type="button"
-        name={option.toLowerCase()}
+        name={option}
         onClick={e => onLeaveFeedback(e.target.name)}
       >
         {option.charAt(0).toUpperCase() + option.slice(1)}
